@@ -14,12 +14,14 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logop"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="60dp"
@@ -29,8 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
 
         />
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/asd"
         android:layout_width="0dp"
@@ -40,7 +40,7 @@
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/logop">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -87,7 +87,7 @@
         android:id="@+id/regBut"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:alpha="0.8"
         android:text="LOGIN"
         android:textColor="@color/colorPrimary"
@@ -101,8 +101,8 @@
         android:id="@+id/regtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
         android:text="Register"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"

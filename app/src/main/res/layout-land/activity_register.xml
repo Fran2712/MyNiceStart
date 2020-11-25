@@ -20,7 +20,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logop"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="36dp"
@@ -40,7 +40,7 @@
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/logop">
 
 
         <com.google.android.material.textfield.TextInputEditText
