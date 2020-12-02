@@ -10,6 +10,11 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Crea una Activity temporal con animaciones y una duracion determinada para luego pasar a el LOGIN
+ * @author Fran
+ * @see LoginActivity
+ */
 public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
