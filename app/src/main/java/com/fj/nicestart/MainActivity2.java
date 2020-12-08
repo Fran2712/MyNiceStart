@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * Crea otra de las Activity principales
+ * @author Fran
+ * @see MainActivity
+ */
 public class MainActivity2 extends AppCompatActivity {
 
     @Override

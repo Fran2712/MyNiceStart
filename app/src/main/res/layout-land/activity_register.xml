@@ -9,24 +9,30 @@
 
     <ImageView
         android:id="@+id/bgimg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
+
+        android:visibility="visible" />
 
 
     <ImageView
         android:id="@+id/logop"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="134dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/a50089637_41e3_4185_8656_fb3682113e14_200x200"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,29 +40,28 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/asd"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
         android:alpha="0.8"
         android:background="@android:color/white"
+        android:hint="Username"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/logop">
-
+        app:layout_constraintTop_toTopOf="@+id/guideline6">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:hint="Username" />
+            android:background="@android:color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/asd3"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:alpha="0.8"
         android:background="@android:color/white"
+        android:hint="Password"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/asd">
@@ -64,18 +69,18 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:hint="Password" />
+            android:background="@android:color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/asd4"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:alpha="0.8"
         android:background="@android:color/white"
+        android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/asd3">
@@ -83,8 +88,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:hint="E-mail" />
+            android:background="@android:color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -92,27 +96,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.52" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/regBut"
-        android:layout_width="185dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
         android:alpha="0.8"
         android:text="REGISTER"
         android:textColor="@color/colorPrimary"
         app:backgroundTint="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/asd4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelBut"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/regBut" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="55dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

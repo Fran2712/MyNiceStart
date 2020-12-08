@@ -11,6 +11,12 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+/**
+ * Crea la Acrivity
+ * principal de la aplicación
+ * @author Fran
+ * @see MainActivity2
+ */
 
 public class MainActivity extends AppCompatActivity {
 

@@ -5,4 +5,5 @@
 | *Splash*              | *Login*              | *Register*              |
 |:--------------------|:-------------------|:----------------------|
 | ![](img/Splash.PNG) | ![](img/Login.PNG) | ![](img/Register.PNG) |
-
+| *Main*              | *Main 2*              |
+| ![](img/Main.PNG) | ![](img/Main2.PNG) |
