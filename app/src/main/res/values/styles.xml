@@ -20,7 +20,7 @@
 
     <style name="ButtonStraight" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/statelist</item>
-        <item name="android:topLeftRadius">10dp</item>
+        <item name="cornerRadius">20dp</item>
     </style>
 
     <style name="ButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
