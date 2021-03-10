@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/boton1"
+        android:id="@+id/boton9"
         style="@style/ButtonStraight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,15 +22,13 @@
 
     <ImageView
         android:id="@+id/profilePC"
-        android:layout_width="171dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="365dp"
-        android:layout_marginBottom="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/boton1"
+        android:layout_width="149dp"
+
+        android:layout_height="133dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

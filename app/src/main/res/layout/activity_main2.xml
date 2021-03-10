@@ -5,22 +5,19 @@
     android:id="@+id/consLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <com.alespero.expandablecardview.ExpandableCardView
-        android:id="@+id/profile"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonas"
+        style="@style/ButtonStraight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="236dp"
-        android:background="@color/colorAccent"
-        app:animationDuration="300"
-        app:expandOnClick="true"
-        app:icon="@android:drawable/star_on"
-        app:inner_view="@layout/expandable_view"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="243dp"
+        android:text="Button"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:startExpanded="false"
-        app:title="Passengers" />
+        app:layout_constraintTop_toBottomOf="@+id/profilePC" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/myswipe"
@@ -42,6 +39,22 @@
             android:textStyle="normal" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="236dp"
+        android:background="@color/colorAccent"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@android:drawable/star_on"
+        app:inner_view="@layout/expandable_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startExpanded="false"
+        app:title="Passengers" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
